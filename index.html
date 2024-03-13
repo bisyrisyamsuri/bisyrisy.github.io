@@ -5,92 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="logos.JPG">
   <title>Bisyri Sy | Web Portofolio</title>
-  <style>
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #d6dee1;
-      border-radius: 10px;
-      border: 2px solid transparent;
-      background-clip: content-box;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #a8bbbf;
-    }
-
-    body {
-      background-color: #0a192f;
-    }
-
-    .img-area {
-      display: block;
-      text-align: center;
-    }
-
-    .carousel-indicators {
-      top: auto;
-      bottom: -70px;
-    }
-
-    .carousel-indicators li {
-      width: 10px;
-    }
-  </style>
 </head>
 
 <body>
   <header class="navbar navbar-light pt-4">
     <div class="container" style="font-family: SF Mono;">
       <a href="index.html" class="text-white" style="font-size: 16px; text-decoration: none;">Bisyri Sy.</a>
-      <a href="CV-BackEnd Developer.pdf" style="text-decoration: none;" class="btn btn-outline-light"><i
+      <a href="CVBisyriSyamsuri_ATS.pdf" style="text-decoration: none;" class="btn btn-outline-light"><i
           class="bi bi-person"></i> Resume</a>
     </div>
   </header>
   <main>
     <!-- Keknya bukan jumbotrom -->
-    <section class="py-5">
+    <section class="py-5" style="height: 538px;">
       <div class="text-center" style="font-family: SF Mono;">
-        <p class="text-white pt-5" style="font-size: 18px;">Halo, perkenalkan nama saya</p>
-        <p class="text-primary px-5" style="font-family: Poppins; font-size: 64px; font-weight: 800;">Bisyri Syamsuri,
-          <span class="text-white-50">dan saya </br>seorang software engineer</span>
-        </p>
-        <p class="text-white pb-2" style="font-size: 18px;">Kamu bisa cek hasil ngoding / portofolio aku dibawah ini :)</p>
-        <a href="https://github.com/bisyrisyamsuri" style="text-decoration: none;" class="btn btn-warning px-4"><i
-            class="bi bi-github"></i> Repository</a>
-        <a href="portoawwal.pdf" style="text-decoration: none;" class="btn btn-primary px-4"> Portofolio PDF</a>
-        <div class="pt-3">
-          <a href="https://wa.me/6285230481254" class="text-white-50 px-2"><i class="bi bi-whatsapp"
-              style="font-size: 25px;"></i></a>
-          <a href="https://www.instagram.com/bsyri19/?hl=en" class="text-white-50 px-2"><i class="bi bi-instagram"
-              style="font-size: 25px;"></i></a>
-          <a href="https://www.linkedin.com/in/bisyrisyamsuri/" class="text-white-50 px-2"><i class="bi bi-linkedin"
-              style="font-size: 25px;"></i></a>
+        <p id="intro" class="text-white pt-5" style="font-size: 18px;"></p>
+        <p id="name" class="text-primary px-5" style="font-family: Poppins; font-size: 64px; font-weight: 800;"></p>
+        <p id="bawah" class="text-white-50 pb-2" style="font-size: 18px;"></p>
+        <div id="keterangan" class="keterangan">
+          <a href="https://github.com/bisyrisyamsuri" style="text-decoration: none;" class="btn btn-warning px-4"><i
+              class="bi bi-github"></i> Repository</a>
+          <a href="Portofolio.pdf" style="text-decoration: none;" class="btn btn-primary px-4"> Portofolio PDF</a>
+          <div class="pt-3">
+            <a href="https://wa.me/6285230481254" class="text-white-50 px-2"><i class="bi bi-whatsapp"
+                style="font-size: 25px;"></i></a>
+            <a href="https://www.instagram.com/bsyri19/?hl=en" class="text-white-50 px-2"><i class="bi bi-instagram"
+                style="font-size: 25px;"></i></a>
+            <a href="https://www.linkedin.com/in/bisyrisyamsuri/" class="text-white-50 px-2"><i class="bi bi-linkedin"
+                style="font-size: 25px;"></i></a>
+          </div>
         </div>
       </div>
     </section>
     <!-- abot me -->
     <section class="py-5">
-      <div class="container pt-5">
+      <div class="container pt-5 hidden-content" id="content">
         <div class="row featurette">
           <div class="col-md-7 order-md-2 px-5 pt-4" style="font-family: poppins;">
             <h1 class="text-primary" style="font-size: 48px; font-weight: 800;">About Me</h1>
             <p class="text-white py-3" style="font-size: 16px;">Hi, Aku Bisyri Syamsuri, aku seorang yang menishabkan
-              diri menjadi seorang software engineer yang berasal dari Madura. Aku lulusan prodi Teknik Informatika, UIN
+              diri menjadi seorang Programmer yang berasal dari Madura. Aku lulusan prodi Teknik Informatika, UIN
               Malang tahun 2023. Aku juga memiliki beberapa pengalaman organisasi dan juga pengalaman magang yang
               tentunya sangat membantu saya dalam mendalami bidang IT ini.</p>
             <p class="text-white-50" style="font-size: 16px;">Aku sangat bangga dan sangat bersemangat untuk belajar
               hal-hal baru tentang programming khususnya backend developer, dan aku juga termasuk orang yang sangat
-              menikmati pekerjaan yanng saya lakukan, dan selalu bertanggung jawab terhadap pekerjaan yang saya lakukan
+              menikmati pekerjaan dan selalu bertanggung jawab terhadap pekerjaan yang saya lakukan
               :)</p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -215,19 +180,20 @@
           <div class="col d-flex">
             <div class="shadow-md" style="border-radius: 50px;">
               <div class="card-body rounded px-4" style="font-family: poppins; background-color: #172a45;">
-                <h1 class="text-white py-3" style="font-weight: 800; font-size: 24px;">Web Rest API Pemesanan Travel
-                </h1>
+                <h1 class="text-white py-3" style="font-weight: 800; font-size: 24px;">Web Infaq Masjid Nurul Iman</h1>
                 <small class="text-success" style="font-family: SF Mono; letter-spacing: -1px;">by <a
                     href="https://wa.me/6285230481254" style="text-decoration: none;">bisyri syamsuri</a></small></br>
-                <i class="fa-brands fa-laravel text-white pt-2" style="font-size: 20px;"></i>
-                <p class="card-text text-white-50 py-2" style="font-size: 14px;">Web App API sederhana menggunakan
-                  framework laravel. Web ini merupakan web yang bertujuan untuk pemesanan travel.</p>
+                <i class="fa-brands fa-html5 text-white pt-2" style="font-size: 20px;"></i>
+                <i class="fa-brands fa-css3-alt text-white pt- ps-3" style="font-size: 20px;"></i>
+                <i class="fa-brands fa-php text-white pt-2 ps-3" style="font-size: 20px;"></i>
+                <i class="fa-brands fa-js text-white pt-2 ps-3" style="font-size: 20px;"></i>
+                <p class="card-text text-white-50 py-2" style="font-size: 14px;">Web yang dibuat menggunakan framework
+                  bootstrap. Web ini bertujuan untuk monitoring infaq masjid nurul iman.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group pb-3">
                     <a type="button" class="btn btn-outline-light"
                       style="font-family: SF Mono; font-size: 14px; letter-spacing: -1px;"
-                      href="https://github.com/bisyrisyamsuri/praksisterUAS"><i class="bi bi-github"></i> Visit
-                      Project</a>
+                      href="https://github.com/bisyrisyamsuri/holding"><i class="bi bi-github"></i> Visit Project</a>
                   </div>
                 </div>
               </div>
@@ -333,7 +299,8 @@
                   <div class="btn-group pb-3">
                     <a type="button" class="btn btn-outline-light"
                       style="font-family: SF Mono; font-size: 14px; letter-spacing: -1px;"
-                      href="https://gitlab.com/bangbeli/bangbeli-landing-page"><i class="bi bi-github"></i> Visit Project</a>
+                      href="https://gitlab.com/bangbeli/bangbeli-landing-page"><i class="bi bi-github"></i> Visit
+                      Project</a>
                   </div>
                 </div>
               </div>
@@ -371,10 +338,38 @@
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-  <script src="https://kit.fontawesome.com/ccc4d89966.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+  <script>
+    var introTyped = new Typed('#intro', {
+      strings: ['Halo, perkenalkan nama saya'],
+      typeSpeed: 25,
+      showCursor: false,
+      onComplete: function (self) {
+        var nameTyped = new Typed('#name', {
+          strings: ['Bisyri Syamsuri, <span class="text-white-50">dan saya </br>seorang Programmer</span>'],
+          typeSpeed: 25,
+          showCursor: false,
+          onComplete: function (self) {
+            var bawahTyped = new Typed('#bawah', {
+              strings: ['Kamu bisa cek hasil ngoding / portofolio aku dibawah ini:)'],
+              typeSpeed: 25,
+              showCursor: false,
+              onComplete: function (self) {
+                var keteranganElement = document.getElementById("keterangan");
+                keteranganElement.style.opacity = "1";
+                keteranganElement.style.animation = "fadeInUp 1s ease-in";
+              }
+            });
+          }
+        });
+      }
+    });
+  </script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+<script src="https://kit.fontawesome.com/ccc4d89966.js" crossorigin="anonymous"></script>
 
 </html>

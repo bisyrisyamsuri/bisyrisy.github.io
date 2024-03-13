@@ -1,0 +1,92 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+body {
+    background-color: #0a192f;
+}
+
+.img-area {
+    display: block;
+    text-align: center;
+}
+
+.carousel-indicators {
+    top: auto;
+    bottom: -70px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    animation: moveAnimation 0.5s ease-out infinite alternate;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.keterangan {
+    opacity: 0;
+    animation: none;
+}
+
+/* Animasi muncul saat masuk ke dalam tampilan */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
